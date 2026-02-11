@@ -5,21 +5,21 @@
 class Stringer < Formula
   desc "Codebase archaeology tool that mines git repos for actionable Beads issues"
   homepage "https://github.com/davetashner/stringer"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/davetashner/stringer/releases/download/v0.7.0/stringer_0.7.0_darwin_amd64.tar.gz"
-      sha256 "605e329ea0683ea75b89eafb54612b37440d40ef45b1310508ab9b43d0fe5ea9"
+      url "https://github.com/davetashner/stringer/releases/download/v0.7.1/stringer_0.7.1_darwin_amd64.tar.gz"
+      sha256 "cd87977c97cbd7accc40ce7d8eadea51e8298c4d25a03538454c59418d714cc5"
 
       def install
         bin.install "stringer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/davetashner/stringer/releases/download/v0.7.0/stringer_0.7.0_darwin_arm64.tar.gz"
-      sha256 "5a36751b67883073ac7a4c17752ac10cb0f23c85e731ad3945c1c34761650e13"
+      url "https://github.com/davetashner/stringer/releases/download/v0.7.1/stringer_0.7.1_darwin_arm64.tar.gz"
+      sha256 "dddcc660a52070a9d5ae601c08d1c8a5d8f17819a624a9595e1382c3c7555b8a"
 
       def install
         bin.install "stringer"
@@ -29,15 +29,15 @@ class Stringer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/davetashner/stringer/releases/download/v0.7.0/stringer_0.7.0_linux_amd64.tar.gz"
-      sha256 "2432657fc9888e5fb6182aaf3bbddf502d9af05286e9c7da146588e0a32d39db"
+      url "https://github.com/davetashner/stringer/releases/download/v0.7.1/stringer_0.7.1_linux_amd64.tar.gz"
+      sha256 "919f024d66c0a80080effabc552ddbb992234af4d0585bb5f6dead25735e702c"
       def install
         bin.install "stringer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/davetashner/stringer/releases/download/v0.7.0/stringer_0.7.0_linux_arm64.tar.gz"
-      sha256 "e49b740efe6b450d264dfe07e41114314bf10aabb4c7c23c5f877f46d91e248a"
+      url "https://github.com/davetashner/stringer/releases/download/v0.7.1/stringer_0.7.1_linux_arm64.tar.gz"
+      sha256 "9c71bad88364d2041b22d9e15c3c69d27b180b5c8d8a45de8e1beb9f634ebd47"
       def install
         bin.install "stringer"
       end
